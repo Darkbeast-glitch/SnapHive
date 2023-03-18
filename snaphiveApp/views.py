@@ -21,7 +21,6 @@ def HomePage(request):
         contact_form = Contact(fullname=name, email=email, phone=phone, category=category, others=others,
                                subject=subject, message=message)
         contact_form.save()
-
         messages.success(
             request, "Your message has been received, SnapHive rep will get to you in less than 24hrs.")
         contact_form.save()
