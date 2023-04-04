@@ -44,8 +44,58 @@
   cursor: pointer;
   padding: .1em .3em;
 }
+
+/* CSS for the counter section */
+.counter {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 50px 0;
+  margin-bottom: 30px;
+}
+
+.counter-icon {
+  margin-bottom: 20px;
+}
+
+.count-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.count-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* CSS for the animation */
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes count {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add the animation class when the element comes into view */
+.animated .count-number {
+  opacity: 1;
+  animation-name: count;
+}
+s
 </style>
+
+
 <body>
+  
 
 
   <!-- ======= Header ======= -->
@@ -63,23 +113,7 @@
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
+         
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
         </ul>
@@ -96,7 +130,7 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
           <h1  data-aos="fade-right" data-aos-delay="1000" data-aos-duration="5000">Boost Your Online Presence with Our Web Development Experts</h1>
-          <h2 style="font-size: smaller;"   data-aos="flip-down" data-aos-delay="1000" data-aos-duration="5000"> We are team of talented designers making websites, graphic deigning,photography,videographer</h2>
+          <h2 style="font-size: smaller;"   data-aos="flip-down" data-aos-delay="1000" data-aos-duration="5000"> We are team of talented designers making websites, graphic deigning,photography,videography.</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
@@ -148,7 +182,7 @@
     </section><!-- End Cliens Section -->
 
     <!-- ======= About Us Section ======= -->
-    <section id="about" class="about" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="2000">
+    <section id="about" class="about" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -569,8 +603,7 @@
               <div class="member-info">
                 <h4>Julius Boakye</h4>
                 <span>Chief Executive Officer</span>
-                <p>Julius is CEO of SnapHive in the Merch Perch industry, with a focus on quality and growth.
-                </p>
+                <p>Julius is CEO of SnapHive in the Merch Perch industry, with a focus on quality and growth. <br> <strong><small>MPB,MPS,TsuMi </small></strong> </p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -598,40 +631,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Boaz Sottie</h4>
-                <span>Front-end Developer</span>
-                <p>Boaz is the head of the front-end developer team, he has great experience in his field, therefore your business is in a safe place.</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Keren</h4>
-                <span>Secretary</span>
-                <p>--</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        
         </div>
 
       </div>
@@ -639,63 +639,39 @@
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
+      <div class="container">
         <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>Free Plan</h3>
-              <h4><sup>$</sup>0<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
+          <div class="col-md-4">
+            <div class="counter">
+              
+              <div class="counter-icon">
+                <img src="{% static 'assets/img/corporate.png'%}" width=50 alt="Happy Clients">
+              </div>
+              <h2 class="timer count-title count-number" data-to="500" data-speed="1500">+109</h2>
+              <p class="count-text">Happy Clients</p>
             </div>
           </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Business Plan</h3>
-              <h4><sup>$</sup>29<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
+          <div class="col-md-4">
+            <div class="counter">
+              <div class="counter-icon">
+                <img src="{% static 'assets/img/loading.png'%}" width=50 alt="Completed Projects">
+              </div>
+              <h2 class="timer count-title count-number" data-to="1000" data-speed="1500">980</h2>
+              <p class="count-text">Completed Projects</p>
             </div>
           </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>Developer Plan</h3>
-              <h4><sup>$</sup>49<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
+          <div class="col-md-4">
+            <div class="counter">
+              <div class="counter-icon">
+                <img src="{% static 'assets/img/percentage.png'%}"  width="50" alt="Percent On Time">
+              </div>
+              <h2 class="timer count-title count-number" data-to="99" data-speed="1500">89%</h2>
+              <p class="count-text">Percent On Time</p>
             </div>
           </div>
-
         </div>
-
       </div>
+      
     </section><!-- End Pricing Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
@@ -884,7 +860,9 @@
       </div>
     </section><!-- End Contact Section -->
 
-  </main><!-- End #main -->
+  </main>
+  
+  <!-- End #main -->
 
   
 
@@ -892,6 +870,9 @@
 
 </body>
 
-{% endblock content%}
 
 </html>
+{% endblock content%}
+
+
+
